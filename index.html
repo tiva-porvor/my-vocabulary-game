@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxford 3000 Mobile Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="setup-screen" class="container">
+        <h1>เลือกหมวดหมู่</h1>
+        <div id="alphabet-buttons" class="grid-alphabet"></div>
+    </div>
+
+    <div id="game-screen" class="container hidden">
+        <div class="header-tools">
+            <button onclick="location.reload()" class="back-btn">← เลิกเล่น</button>
+            <div class="stats-bar">
+                <span>รวม: <b id="total-val">0</b></span>
+                <span class="correct">ถูก: <b id="correct-val">0</b></span>
+                <span class="wrong">ผิด: <b id="wrong-val">0</b></span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 id="word-display">Word</h2>
+        </div>
+
+        <div id="options-container" class="options-stack">
+            </div>
+        
+        <p id="feedback"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

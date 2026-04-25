@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+body { 
+    font-family: 'Kanit', sans-serif; 
+    background: #f4f7f6; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    padding: 15px; 
+}
+
+.container { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    width: 100%; 
+    max-width: 450px; 
+    text-align: center; 
+}
+
+.hidden { display: none; }
+
+/* หน้าเลือกหมวดหมู่ */
+.grid-alphabet { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); 
+    gap: 8px; 
+}
+.alphabet-btn { 
+    padding: 12px; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    background: #fff; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ส่วนหัวเกม */
+.header-tools { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+.stats-bar { font-size: 0.9rem; }
+.correct { color: #28a745; margin-left: 5px; }
+.wrong { color: #dc3545; margin-left: 5px; }
+
+/* การ์ดคำศัพท์ */
+.card { 
+    background: linear-gradient(135deg, #6e8efb, #a777e3); 
+    color: white; 
+    padding: 50px 20px; 
+    border-radius: 15px; 
+    margin-bottom: 25px; 
+    font-size: 1.8rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* ปุ่มตัวเลือกแบบ Stack (เหมาะกับมือถือ) */
+.options-stack { display: flex; flex-direction: column; gap: 12px; }
+.option { 
+    padding: 18px; 
+    border: 2px solid #eee; 
+    border-radius: 12px; 
+    background: #fafafa; 
+    font-size: 1.1rem; 
+    cursor: pointer;
+    transition: 0.2s;
+}
+.option:active { transform: scale(0.98); background: #eef2ff; }
+
+#feedback { font-size: 1.2rem; font-weight: bold; margin-top: 15px; min-height: 28px; }
